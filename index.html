@@ -1,6 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+    
+/*code from w3schools: https://www.w3schools.com/css/css3_buttons.asp */  
+.button {
+  background-color: #D3D3D3; /* Light Gray*/
+  border: none;
+  color: white;
+  padding: 32px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #D3D3D3;
+  color: white;
+  border-radius: 8px;
+}
+
+.button1:hover {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #D3D3D3;
+  border-radius: 8px;
+}
+
+.operationButton {
+  background-color: #FFC0CB;
+  color: white;
+  border-radius: 8px;
+}
+
+.operationButton:hover {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #FFC0CB;
+  border-radius: 8px;
+}    
+    
+.enterButton {
+  background-color: #AFEEEE;
+  color: white;
+  border-radius: 8px;
+  padding: 32px 58px;
+}
+
+.enterButton:hover {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #AFEEEE;
+  border-radius: 8px;
+  padding: 32px 58px;
+}   
+
+.button:active {
+  background-color: white;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}   
+    
+</style>    
 <title> Fancy Calculator :)</title>
 <link rel="stylesheet" type="text/css" href="../style.css" />
 
@@ -15,7 +81,35 @@ function secret(num1, num2, num3)
 
 <body>
 
-Hello, world!
+<!code from w3schools: https://www.w3schools.com/css/css3_buttons.asp>
+<div>
+    <button class="button button1">7</button>
+    <button class="button button1">8</button>
+    <button class="button button1">9</button>
+    <button class="button operationButton">+</button>
+</div>
+
+<div>
+    <button class="button button1">4</button>
+    <button class="button button1">5</button>
+    <button class="button button1">6</button>
+    <button class="button operationButton">-</button>
+</div>
+    
+<div>
+    <button class="button button1">1</button>
+    <button class="button button1">2</button>
+    <button class="button button1">3</button>  
+    <button class="button operationButton">*</button>
+</div>    
+    
+<div>
+    <button class="button button1">0</button>
+    <button class="button enterButton">Enter</button>
+    <button class="button operationButton">/</button>
+</div>
+
+
   
 </body>
 </html>
